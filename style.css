@@ -1,0 +1,1425 @@
+:root{
+    --text-color: #000;
+    --card-text: #0f001a;
+    --orange: #cc5520;
+    --white: #fff;
+    --background: #ff510051;
+    --box-shadow:  #ea912780;
+    --home-box-shaow: #4b008142;
+    --fox-background: #ffe9d0;
+    --dropdown-background:rgba(103, 103, 103, 0.5);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Roboto;
+    scroll-behavior: smooth;
+}
+
+.home{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(180deg, var(--background), rgba(255, 107, 0, 0)),
+                linear-gradient(0deg, var(--white), var(--white));
+    box-shadow:0 0 10px 0 var(--home-box-shaow);
+}
+
+header{
+    padding: 3rem;
+}
+
+.homeTitle{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: var(--card-text);
+    font-weight: 500;
+    padding-left: 5rem;
+}
+
+nav{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav a{
+    text-decoration: none;
+    color: var(--card-text);
+    
+}
+
+label{
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--card-text);
+    font-weight: 500;
+    padding:1rem 0; 
+}
+
+#toggler, label{
+    display: none;
+}
+
+.overlay{
+    background-color: rgba(103, 103, 103, 0.8);
+    position: absolute;
+    top: 20rem;
+    width: 100%;
+    height: auto;
+    bottom: 0;
+    z-index: 1;
+    display: none;
+}
+
+.list{
+    display: flex;
+    list-style: none;
+    gap: 10rem;
+}
+
+.list i{
+    display: none;
+    font-size: 2rem;
+}
+
+
+.navLinks{
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.navLinks:hover{
+    color: var(--orange);
+}
+
+.homeMain{
+    padding:8rem ;
+}
+
+.Mockup1{
+    position: absolute;
+    right: 2rem;
+}
+
+h2{
+    font-size: 2.5rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.homeText{
+    padding:1rem 0 0 0;
+    width: 60%;
+    font-size: 1.15rem;
+    line-height: 1.5;
+}
+
+.homeDownload{
+    margin-top: 2.5rem;
+}
+
+.googlePlay{
+    margin-right: 2rem;
+}
+
+.customerHelp{
+    height: auto;
+    padding-top: 5rem;
+    width: 100%;
+}
+
+.whatWeDo{
+    width: 30rem;
+    font-size: 3rem;
+    line-height: 4.3rem;
+    display: grid;
+    grid-column: 1;
+    grid-row: 2fr;
+}
+
+.cards {
+    margin:5rem 0 22rem 15%;
+    display: grid;
+    grid-template-columns: repeat(3, 16rem);
+    grid-template-rows: repeat(4, 20rem);
+    column-gap: 1rem;
+}
+
+.card{
+    position: relative;
+    width: 18rem;
+    height: 30rem;
+    padding: 2rem;
+    border-radius: .6rem;
+    box-shadow:0 .3rem 1.25rem 0 var(--box-shadow);
+    margin-left: 10%;
+}
+
+#firstCard{
+    grid-column: 3;
+    grid-row: 1;
+}
+
+#secondCard{
+    margin-left: 40%;
+    grid-column: 1;
+    grid-row: 2 ;
+}
+
+#thirdCard{
+    grid-column: 3;
+    grid-row: 3 ;
+}
+
+.square{
+    width: 9.6rem;
+    height: 9.6rem;
+    z-index: -1;
+}
+
+#firstCardSquare{
+    position: absolute;
+    top: -5rem;
+    right: -5rem;
+    z-index: -1;
+}
+
+#secondCardSquare{
+    position: absolute;
+    bottom: -8.5rem;
+    left: -5rem;
+}
+
+#thirdCardSquare{
+    position: absolute;
+    right: -5rem;
+    bottom: -5rem;
+}
+
+.cardText{
+    width: 17.75rem;
+    height: 6.4rem;
+    font-size: 1rem;
+    line-height: 1.6rem;
+    margin-top:1.25rem;
+    opacity: 60%;
+}
+
+.firstCardImg{
+    width: auto;
+    height: 17.375rem;
+}
+
+.secondCardImg{
+    width: auto;
+    height: 15.3rem;
+    
+} 
+
+.thirdCardImg{
+    width: auto;
+    height: 16.5rem;
+}
+
+.cardTitle{
+    color: var(--card-text);
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+.cardInfo{
+    display: flex;
+    margin-top: 3rem;
+    color: var(--orange);
+}
+
+i{
+    margin-left: 2rem;
+}
+
+.howItWorks{
+    width: 100%;
+    height: 28rem;
+    background: var(--orange);
+}
+
+.worksTitle{
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--white);
+    padding-top: 5rem;
+}
+
+.steps{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 4.6rem;
+    text-align: center;
+    padding: 0 10rem 8rem 10rem;
+}
+
+.stepsDescription{
+    width: 16rem;
+    height: 3.25rem;
+    font-size: 1rem;
+    color: var(--white);
+    line-height: 1.6rem;
+    font-weight: 400;
+    margin-top: .6rem;
+}
+
+.underIcon{
+    color: var(--white);
+    height: 1.3rem;
+    font-size: 1.15rem;
+    font-weight: 400;
+    margin-top: 2rem;
+}
+
+.testimonials{
+    height: auto;
+    width: 100%;
+    padding-top: 5rem;
+    margin-bottom: -20rem ;
+}
+
+.testimonialsTitle{
+    position: relative;
+    margin: 0 5rem 0 50rem;
+}
+
+.foxImg{
+    position: absolute;
+    width: 25rem;
+    height: 30rem;
+    margin: -3rem 0 0 13rem;
+}
+
+.foxBackground{
+    margin-top: 6rem;
+    width: 42rem;
+    height: 25rem;
+    background: var(--fox-background);
+}
+
+.comment{
+    position: relative;
+    margin:0 2rem 0 48rem;
+    top: -20rem;
+}
+
+.fa-quote-left{
+    opacity: 50%;
+    font-size: 3rem;
+}
+
+.commentText{
+    width: 80%;
+    height: auto;
+    margin: 2rem;
+    opacity: 50%;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: var(--card-text);
+}
+
+.commentAuthor{
+    margin: 1rem 2rem;
+    font-size: 1.15rem;
+}
+
+.buttons{
+    margin: 3rem 0 0 14rem;
+    width: 10rem;
+    height: 5rem;
+    box-shadow: 0 0.25rem .8rem 0 #00000014;
+}
+
+.buttons i{
+    margin: 0;
+}
+
+.fa-chevron-left{
+    font-size: 3.75rem;
+    padding: .6rem 1.25rem;
+    background: var(--orange);
+    color: var(--white);
+}
+
+.fa-chevron-left:hover,
+.fa-chevron-right:hover{
+    box-shadow: 0 .6rem 1.25rem 0 #00000071;
+}
+
+.fa-chevron-right{
+    font-size: 3.75rem;
+    padding: .6rem 1.25rem;
+    color: var(--orange);
+}
+
+.promotion{
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.mockup{
+    padding: 3rem 0;
+    float: left;
+}
+
+.downloadApp{
+    margin-top:10rem ;
+    text-align: center;
+    margin-left: 0rem;
+}
+
+.download{
+    width: auto;
+}
+
+.promotionTitle{
+    width: 20rem;
+    height: 2rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height:2rem ;
+    margin-bottom: 1rem ;
+    margin-left: 4rem;
+}
+
+.promotionText{
+    width: 28rem;
+    height: 4.4rem;
+    line-height: 1.5rem;
+    font-size: 1rem;
+    color: var(--card-text);
+    opacity: 50%;
+    margin-bottom: 3rem;
+}
+
+footer{
+    width: 100%;
+    height: auto;
+    background: var(--orange);
+}
+
+.topFooter{
+    padding:3rem 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.foxminded{
+    color: var(--white);
+    font-weight: 500;
+    margin-right: 5%;
+}
+
+.quickLinks, .others, .products{
+    display: flex;
+    flex-direction: column;
+}
+
+.quickLinks .linksTitle{
+    margin-right: 5rem;
+}
+
+.others .linksTitle{
+    margin-right: 7.75rem;
+}
+
+.products .linksTitle{
+    margin-right: 5.5rem;
+}
+
+.linksTitle{
+    color: var(--white);
+    height: 1.4rem;
+    font-size: 1.15rem;
+    font-weight: 400;
+    line-height: 1.3rem;
+    border-bottom: .125rem solid var(--white);
+}
+
+.quickLinks a, .others a, .products a{
+    width: 100%;
+    font-size: .875rem;
+    height: 1rem;
+    text-decoration: none;
+    color: var(--white);
+    margin-top: 1.25rem;
+}
+
+.subscribe{
+    width: 25rem;
+}
+
+.subscribeTitle{
+    height: 3.25rem;
+    font-size: 1.15rem;
+    font-weight: 300;
+    color: var(--white);
+    line-height: 1.6rem;
+    margin-bottom: .8rem;
+    text-align: center;
+}
+
+.inputAndButton{
+    display: flex;
+    justify-content: center;
+}
+
+.subscribeInput{
+    width: 15.5rem;
+    padding: 1.25rem;
+    border-radius: .2rem;
+    border: none;
+    margin-right: .6rem;
+}
+
+.subscribeButton{
+    width: 7.25rem;
+    border-radius: .2rem;
+    border: none;
+    color: var(--orange);
+    cursor: pointer;
+}
+
+.fotterLine{
+    width: 100%;
+    height: 1px;
+    background: var(--white);
+}
+
+.bottomFooter{
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.25rem 7.75rem;
+}
+
+.copyright{
+    color: var(--white);
+    font-size: .65rem;
+    line-height: .76rem;
+}
+
+.icons i{
+    width: 1rem;
+    height: 1rem;
+    margin: 0 .8rem;
+}
+
+@media (max-width: 1200px){
+    .home{
+        height: auto;
+    }
+
+
+    .homeMain{
+        padding:5rem 0 8rem 7rem ;
+    }
+
+    .Mockup1{
+        width: 20rem;
+    }
+
+    h2{
+        font-size: 2rem;
+    }
+
+    .homeDownload{
+        display: flex;
+    }
+
+    .homeText{
+        width: 55%;
+        height: auto;
+    }
+
+    .whatWeDo{
+        height: auto;
+        width: 18rem;
+        font-size: 2rem;
+        line-height: 40px;
+        padding-left: 30%;
+    }
+
+    .cards {
+        margin: 4rem 0 18rem 10%;
+        grid-template-columns: repeat(3, 14rem);
+        grid-template-rows: repeat(3, 18rem);
+    }
+
+    .card{
+        margin-left: 0%;
+        width: 100%;
+        height: 25rem;
+        padding: 2rem;
+    }
+
+    .cardText{
+        width: auto;
+        font-size: 1rem;
+        line-height: 1.375rem;
+        margin-top: 0.625rem;
+    }
+    
+     .firstCardImg{
+        width: 12rem;
+        height: auto;
+        padding: 0 1rem;
+    }
+    
+    .secondCardImg{
+        width: 12rem;
+        height: auto;
+        padding: 0 1rem;
+    } 
+    
+    .thirdCardImg{
+        width: 12rem;
+        height: auto;
+        padding: 0 1rem;
+    }
+
+    .square{
+        width: 7rem;
+        height: 7rem;
+    }
+
+    #firstCardSquare{
+        top: -3.5rem;
+        right: -3.5rem;
+    }
+    
+    #secondCardSquare{
+        bottom: -6rem;
+        left: -3.5rem;
+    }
+    
+    #thirdCardSquare{
+        bottom: -3.5rem;
+        right: -3.5rem;
+    }
+    
+    .cardTitle{
+        font-size: 1.15rem;
+    }
+    
+    .cardInfo{
+        font-size: .9rem;
+        margin-top: 1rem;
+    }
+
+    .steps{
+        padding: 0 6rem 8rem 6rem;
+    }
+
+    .foxImg{
+        width: 17rem;
+        height: 20rem;
+        margin: 0 0 0 10rem;
+    }
+
+    .foxBackground{
+        width: 32rem;
+        height: 18rem;
+    }
+
+    .testimonialsTitle{
+        position: relative;
+        margin: 4rem 5rem 0 39rem;
+        font-size: 1.7rem;
+    }
+    
+    .comment{
+        margin:0 3rem 0 37rem;
+    }
+
+    .buttons{
+        scale: 70%;
+        margin-left: 10rem;
+    }
+
+    .promotion{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    .mockup{
+        width: 25rem;
+    }
+    
+    .downloadApp{
+        margin-top:8rem ;
+        text-align: center;
+    }
+    
+    .promotionTitle{
+        width: 20rem;
+        height: 1.4rem;
+        font-size: 1.4rem;
+        margin-bottom: .8rem ;
+    }
+
+    .linksTitle{
+        font-size: 1rem;
+    }
+
+    .foxminded{
+        color: var(--white);
+        font-weight: 500;
+        margin-right: 3%;
+    }
+    
+    
+    .quickLinks .linksTitle{
+        margin-right: 3rem;
+    }
+    
+    .others .linksTitle{
+        margin-right: 3rem;
+    }
+
+    .products .linksTitle{
+        margin-right: 3rem;
+    }
+
+    .subscribe{
+        width: 20rem;
+    }
+
+    .subscribeInput{
+        padding: 1rem;
+    }
+
+}
+
+@media (max-width: 992px){
+
+    .homeTitle{
+        padding-left: 2rem;
+    }
+
+    .home{
+        height: auto;
+    }
+
+    .list{
+        gap: 7rem;
+    }
+
+    .homeMain{
+        padding:5rem 0 3rem 5rem ;
+    }
+
+    .Mockup1{
+        width: 15rem;
+    }
+
+    h2{
+        font-size: 1.75rem;
+    }
+
+    .homeDownload{
+        display: flex;
+        margin-top: 1rem;
+    }
+
+    .googlePlay{
+        width: 9rem;
+        height: 3rem;
+    }
+
+    .appStore{
+        width: 9rem;
+        height: 3rem;
+    }
+
+    .customerHelp{
+        height: auto;
+        padding-top:0;
+        margin-top: -8rem;
+    }
+
+    .cards {
+        margin: 14rem 0 16rem 0%;
+        padding-left: 0;
+        grid-template-columns: repeat(3, 12rem);
+        grid-template-rows: repeat(3, 14rem);
+        margin-left: 5%;
+    }
+
+    .whatWeDo{
+        width: 15rem;
+        font-size: 1.7rem;
+        line-height: 2rem;
+        margin-left: 30%;
+    }
+
+    .card{
+        height: 20rem;
+    }
+
+    .cardText{
+        width: auto;
+        font-size: .875rem;
+        line-height: 1.375rem;
+        margin-top: .625rem;
+    }
+    
+    .firstCardImg{
+        width: 9rem;
+        padding: 0 1.5rem;
+    }
+    
+    .secondCardImg{
+        width: 9rem;
+        padding: 0 1.5rem;
+    } 
+    
+    .thirdCardImg{
+        width: 9rem;
+        padding: 0 1.5rem;
+    }
+
+    #secondCard{
+        margin-left: 60%;
+    }
+    
+    .cardTitle{
+        font-size: 1rem;
+    }
+    
+    .cardInfo{
+        font-size: .875rem;
+        margin-top: 1rem;
+    }
+
+    .steps{
+        padding: 0 2rem 8rem 2rem;
+    }
+
+    .worksTitle{
+        font-size: 1.5rem;
+    }
+
+    .steps img{
+        scale: 70%;
+    }
+
+    .underIcon{
+        margin-top: 1rem;
+    }
+
+    .stepsDescription{
+        line-height: 1.25rem;
+        width: 14rem;
+    }
+
+    .foxImg{
+        width: 12rem;
+        height: 15rem;
+        margin: 2rem 0 0 10rem;
+    }
+
+    .foxBackground{
+        width: 25rem;
+        height: 13rem;
+    }
+
+    .testimonialsTitle{
+        position: relative;
+        margin: 3rem 5rem 0 30rem;
+        font-size: 1.4rem;
+    }
+    
+    .comment{
+        margin:3rem 3rem 0 28rem;
+    }
+
+    .fa-quote-left{
+        font-size: 2rem;
+    }
+
+    .buttons{
+        scale: 60%;
+        margin: 1rem 2rem 0 60%;
+    }
+
+    .buttons{
+       
+        width: 10rem;
+        height: 5rem;
+        box-shadow: 0 .25rem 1rem 0 #00000014;
+    }
+
+    .mockup
+    {
+        width: 20rem;
+    }
+    
+    .downloadApp{
+        margin-top:5rem ;
+    }
+    
+    .promotionTitle{
+        width: 20rem;
+        margin: 0 0 .8rem 0;
+    }
+    
+    .promotionText{
+        width: 20rem;
+        height: 4.5rem;
+        line-height: 1.5rem;
+        font-size: .875rem;
+        color: var(--card-text);
+        opacity: 50%;
+        margin-bottom: 3.5rem;
+    }
+
+    .foxminded{
+        color: var(--white);
+        font-weight: 500;
+        margin-right: 3%;
+    }
+    
+    
+    .quickLinks .linksTitle{
+        margin-right: 3rem;
+    }
+    
+    .others .linksTitle{
+        margin-right: 3rem;
+    }
+
+    .products .linksTitle{
+        margin-right: 3rem;
+    }
+
+    .subscribeTitle{
+        height: auto;
+        font-size: 1rem;
+        line-height: 1.25rem;
+        margin-bottom: .625rem;
+        font-weight: 400;
+    }
+
+    .subscribe{
+        width: 15rem;
+    }
+
+    .subscribeInput{
+        padding: .625rem;
+        width: auto;
+    }
+
+    .subscribeButton{
+        width: auto;
+        padding: .3rem;
+        font-size: .875rem;
+    }
+
+}
+
+@media (max-width: 768px){
+    body{
+        overflow: auto;
+    }
+
+    .home{
+        display: grid;
+    }
+
+    header{
+        padding:0;
+        text-align: center;
+    }
+
+    input{
+        display: flex;
+    }
+
+    .homeMain{
+        padding:3rem 0 ;
+        text-align: center;
+    }
+
+    .menu{
+       width: 100%;   
+       max-height: 0;
+       overflow: hidden;
+    }
+
+    .homeTitle{
+        display: none;
+    }
+
+    nav{
+        justify-content: center;
+    }
+
+    label{
+        display: inline-flex;
+    }
+
+    .list li{
+        padding: 1rem 0;
+    }
+
+    #toggler:checked~.menu{
+        max-height: 100%;
+        background: linear-gradient(180deg, var(--background), rgba(255, 107, 0, 0)),
+                linear-gradient(0deg, var(--white), var(--white));
+    }
+
+    #toggler:checked~.overlay{
+        display: inline-flex;
+    }
+
+    #toggler:checked~.xmark{
+        max-height: 0;
+    }
+
+    #toggler:active~body{
+        overflow: hidden;
+    }
+
+    .list i{
+        width: auto;
+        display: block;
+        font-size: 1rem;
+        padding: 0;
+        margin-left: -.5rem;
+    }
+
+    .list{
+        flex-direction: column;
+        text-align: center;
+        padding-top:1rem;
+        gap: 0;
+    }
+
+    h2{
+        width: auto;       
+        font-size: 1.375rem;
+    }
+
+    .homeText{
+        width: auto;
+        text-align: center;
+        padding: 1rem 2rem;
+        font-size: 1rem;
+    }
+
+    .Mockup1{
+        margin-top: 1rem;
+        width: 15rem;
+        position:unset;
+        justify-self:center ;
+    }
+
+    .googlePlay{
+        margin:0 0 .5rem 0;
+    }
+
+    .homeDownload{
+        display: grid;
+        justify-content: center;
+    }
+
+    .navLinks:hover{
+        color: var(--text-color);
+    }
+
+    .customerHelp{
+        padding-top:0;
+        margin: 0rem 0;
+    }
+
+    #firstCard{
+        grid-column: 1;
+        grid-row: 2;
+    }
+    
+    #secondCard{
+        margin-left: 0rem;
+        grid-column: 1;
+        grid-row: 3 ;
+    }
+    
+    #thirdCard{
+        grid-column: 1;
+        grid-row: 4 ;
+    }
+
+    .whatWeDo{
+        text-align: center;
+        padding: 0;
+        line-height: 3rem;
+        font-size: 1.75rem;
+        width: 16rem;
+        margin-left: 0;
+        grid-row: 1;
+    }
+
+    .cards {
+        margin:2rem 0;
+        justify-content: center;
+        grid-template-columns: repeat(1, 16rem);
+        grid-template-rows: repeat(1, 9rem);
+        gap: 2rem;
+    }
+
+    .card{
+        width: auto;
+    }
+
+    .square{
+        display: none;
+    }
+
+    .howItWorks{
+        height: auto;
+    }
+
+    .howItWorks img{
+        width: 6rem;
+        padding: 1rem;
+    }
+
+    .worksTitle{
+        font-size: 2rem;
+        padding:2rem 0 0 0;
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .steps{
+        display: grid;
+        justify-content: center;
+        padding-bottom: 3rem;
+        margin-top: 0;
+    }
+
+    .underIcon{
+        font-size: 1.15rem;
+        margin-top: 0;
+    }
+
+    .stepsDescription{
+        width: 10rem;
+        line-height: 1.375rem;
+        font-size: 1.15rem;
+        margin-top: .5rem;
+    }
+
+    .testimonials{
+        padding-top: 2rem;
+        display: grid;
+    }
+
+    .foxImg{
+        width: 15rem;
+        height: 18rem;               
+        margin:2rem;
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        text-align: center;
+    }
+
+    .foxBackground{
+        width: 100%;
+        height: 17rem;
+    }
+
+    .testimonialsTitle{
+        text-align: center;
+        margin: 0;
+        padding:.5rem 0;
+        font-size: 2rem;
+    }
+
+    .commentText{
+        width: auto;
+        font-size: 1.25rem;
+    }
+
+    .commentAuthor{
+        font-size: 1.25rem;
+    }
+
+    
+    .comment{
+        margin:20rem 0rem 0 0rem;
+    }
+
+    .fa-chevron-left,
+    .fa-chevron-right{
+        margin-top: 1rem;
+        font-size: 2.6rem;
+    }
+
+    .buttons{
+        position: absolute;
+        scale: 100%;
+        right: 2%;
+        width: 8rem;
+        height: auto;
+        margin: 0;
+        display: flex;
+    }
+
+    .promotion{
+        display: grid;
+    }
+
+    .mockup{
+        justify-self: center;
+        width: 70%;
+        margin-top: 5rem;
+        padding: 0;
+    }
+    
+    .downloadApp{
+        margin-top:2rem ;
+        text-align: center;
+    }
+    
+    .promotionTitle{
+        width: 100%;
+        margin: 0 0 .8rem 0;
+        font-size: 1.625rem;
+    }
+    
+    .promotionText{
+        text-align: center;
+        width: auto;
+        height: auto;
+        line-height: 1.5rem;
+        padding: 2rem;
+        margin-bottom: 0;
+        font-size: 1.25rem;
+    }
+
+    .download{
+        margin-bottom: 2rem ;
+        display: grid;
+        justify-content: center;
+    }
+
+    .topFooter{
+        width: 100%;
+        padding:1rem 0;
+        display: grid;
+        justify-content: none;
+    }
+
+    .foxminded{
+        text-align: center;
+        margin-right: 0%;
+    }
+
+    .quickLinks, .others, .products{
+        text-align: center;
+    }
+
+    .quickLinks .linksTitle{
+        margin-right: 0;
+    }
+    
+    .others .linksTitle{
+        margin-right: 0;
+        width: auto;
+    }
+    
+    .products .linksTitle{
+        margin-right: 0;
+    }
+
+    .linksTitle{
+        margin: 1rem 0 0 0;
+    }
+
+    .subscribeTitle{
+        height: auto;
+        font-size: 1rem;
+        line-height: 1.25rem;
+        margin: .625rem 0;
+        font-weight: 400;
+    }
+
+    .subscribe{
+        width: auto;
+        padding: 0 .625rem;
+    }
+
+    .inputAndButton{
+        display: grid;
+        justify-content:unset;
+
+    }
+
+    .subscribeInput{
+        padding: 1rem;
+        width: auto;
+        margin: .5rem 0;
+    }
+
+    .subscribeButton{
+        padding: .625rem;
+        font-size: .875rem;
+        text-align: center;
+    }
+
+    .bottomFooter{
+        padding: 1.25rem;
+    }
+
+    .icons i{
+        margin: 0 .47rem;
+    }
+}
+
+
+@media (max-width: 375px) {
+
+    header{
+        padding:1rem 0;
+        text-align: center;
+    }
+
+    .homeMain{
+        padding:1rem 1rem 2rem 1rem;
+    }
+ 
+    .xmark{
+        display: block;
+        font-size: 2rem;
+        padding-right: 2.5rem;
+    }
+
+    .Mockup1{
+        width: 12rem;
+    }
+
+    h2{
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+
+    .homeText{
+        width: 100%;
+        padding:1rem 0 .5rem 0;
+        font-size: 1rem;
+    }
+
+    .cards {
+        margin:2rem 0 2rem 0rem;
+        grid-template-columns: repeat(1, 14rem);
+        grid-template-rows: repeat(1, 5rem);
+    }
+
+    .whatWeDo{
+        line-height: 2rem;
+        font-size: 1.25rem;
+        width: 15rem;
+    }
+
+    .card{
+        width: 10rem;
+        height: 18rem;
+    }
+    
+    .firstCardImg{
+        width: 7rem;
+        padding:0 1.5rem;
+    }
+    
+    .secondCardImg{
+        width: 7rem;
+        padding:0 1.5rem;
+    } 
+    
+    .thirdCardImg{
+        width: 7rem;
+        padding:0 1.5rem;
+    }
+
+    .foxImg{
+        width: 10rem;
+        height: auto;
+    }
+
+    .foxBackground{
+        height: 8rem;
+    }  
+
+    .promotionTitle{
+        width: 100%;
+        margin: 0 0 .8rem 0;
+        font-size: 1.15rem;
+    }
+    
+    .promotionText{
+        font-size: .875rem;
+    }
+
+    .bottomFooter{
+        display: grid;
+        grid-template-columns: repeat(1 , 100%);
+    }
+
+    .copyright{
+        width: 100%;
+        text-align: center;
+        font-size: .75rem ;
+        padding: .675rem 0;
+    }
+
+    .icons{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        padding: .675rem 0;
+    }
+
+    .icons i{
+        margin: 0;
+    }
+
+}
+
+@media (hover:hover) {
+    .list li:hover{
+        background: var(--orange);
+    }
+
+    .list li a:hover{
+        color: var(--white);
+    }
+}
+
+@media (hover:none) {
+    .list li:hover{
+        background: var(--orange);
+    }
+
+    .list li a:hover{
+        color: var(--white);
+    }
+}
+
+
